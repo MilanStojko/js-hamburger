@@ -1,14 +1,14 @@
-const valoreShow = document.querySelector(".fa-bars");
-function toggleMenu() {
+const showMenu = document.querySelector(".fa-bars");
+showMenu.addEventListener("click", function(){
     const element = document.querySelector(".hamburger-menu");
-    element.className = element.classList.add(".active");
-}
-valoreShow.addEventListener("click", toggleMenu);
+    element.classList.add("active");
+})
 
 
 
-const valoreClose = document.querySelector(".fa-times");
-valoreClose.addEventListener("click", function(){
+
+ const valoreClose = document.querySelector(".fa-times");
+ valoreClose.addEventListener("click", function(){
     const element = document.querySelector(".hamburger-menu");
-    element.className = element.classList.remove("active");
-});
+    element.classList.remove("active");
+ });
